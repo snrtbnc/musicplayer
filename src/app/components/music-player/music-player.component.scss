@@ -1,0 +1,31 @@
+#progressBar { 
+    border:1px solid #aaa; 
+    color:#fff; 
+    width:295px; 
+    height:30px;
+    padding: 0px;
+    display: inline-block;
+ }
+ 
+ .progress {
+   width: 1px;
+   height: 3px;
+   background: #006B5A;
+   transition: width .1s linear;
+ }
+ 
+ #buffered {
+    background-color: #cccccc;
+    display:inline-block;
+    line-height: 30px;
+    margin-right:0px;
+    z-index: 1;
+ }
+ 
+ #info {
+     width: 295px;
+ }
+ .mat-progress-bar{
+    position:fixed;
+    width: 30%
+   }

@@ -1,0 +1,32 @@
+<div>
+  <button routerLink="../">Back</button>
+ 
+  <ul>
+    <li *ngFor="let item of ShowPlayList">
+      <button (click)="addPlayList(item)">+</button>
+      {{item.Id}}
+     
+      {{item.Name}}
+     
+    </li>
+  </ul>
+
+  Music => {{currentSongName}}
+  {{durationshow}}
+  <mat-progress-bar mode="determinate" [value]="progressbarValue"></mat-progress-bar>
+  <button (click)="Pause()">Pause</button>
+  <button (click)="Play()">Play</button>
+  <button (click)="Stop()">Stop</button>
+ </div>
+
+<div>
+  <ul>
+   <label >Song Queue</label>
+    <li *ngFor="let item of QueueueList">
+        {{item.Name}}
+    </li>
+   
+  </ul>
+  {{test}}
+</div>
+<label *ngIf="!QueueueList[0]">List BOS</label>
